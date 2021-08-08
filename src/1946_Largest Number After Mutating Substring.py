@@ -15,9 +15,7 @@ class Solution:
 
             for j in range(1, len(num[i + 1 :]) + 1):
                 changed_num = (
-                    changed_num[: i + j]
-                    + str(change[int(num[i + j])])
-                    + changed_num[i + j + 1 :]
+                    changed_num[: i + j] + str(change[int(num[i + j])]) + changed_num[i + j + 1 :]
                 )
                 if changed_num >= max_num:
                     max_num = changed_num
@@ -43,7 +41,7 @@ class Solution:
 
     def maximumNumber3(self, num: str, change: List[int]) -> str:
         """
-        TC: O(n) / SC: O(1)
+        TC: O(N) / SC: O(1)
         Runtime: 1324 ms, faster than 6.40%
         Memory Usage: 16.3 MB, less than 63.96%
         """

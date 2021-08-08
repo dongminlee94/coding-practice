@@ -1,7 +1,7 @@
 class Solution:
     def getLucky(self, s: str, k: int) -> int:
         """
-        TC: O(n) / SC: O(1)
+        TC: O(N) / SC: O(1)
         Runtime: 32 ms, faster than 90.10%
         Memory Usage: 14.2 MB, less than 82.93%
         """
