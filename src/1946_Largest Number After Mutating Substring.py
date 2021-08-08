@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def maximumNumber1(self, num: str, change: List[int]) -> str:
         """
-        TC: O(n^2) / SC: O(n)
+        TC: O(N^2) / SC: O(N)
         Time Limit Exceeded
         """
         max_num = num
@@ -25,7 +25,7 @@ class Solution:
 
     def maximumNumber2(self, num: str, change: List[int]) -> str:
         """
-        TC: O(n) / SC: O(n)
+        TC: O(N) / SC: O(N)
         Runtime: 284 ms, faster than 66.52%
         Memory Usage: 22.2 MB, less than 49.40%
         """
