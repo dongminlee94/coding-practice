@@ -41,14 +41,14 @@ class Solution:
 
     def maximumNumber3(self, num: str, change: List[int]) -> str:
         """
-        TC: O(N) / SC: O(1)
+        TC: O(N^2) / SC: O(N)
         Runtime: 1324 ms, faster than 6.40%
         Memory Usage: 16.3 MB, less than 63.96%
         """
         changed = False
         for i in range(len(list(num))):
             if str(change[int(num[i])]) > num[i]:
-                num = num[:i] + str(change[int(num[i])]) + num[i + 1 :]
+                num = num[:i] + str(change[int(num[i])]) + num[i + 1 :]  # TC: O(N)
                 changed = True
             elif changed == True and str(change[int(num[i])]) < num[i]:
                 break
