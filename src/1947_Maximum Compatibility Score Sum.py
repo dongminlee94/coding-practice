@@ -20,6 +20,7 @@ class Solution:
             for m_idx in range(len(students)):
                 if m_idx not in assigned:  # TC: O(N)
                     score = sum([s == m for s, m in zip(students[s_idx], mentors[m_idx])])
+                    # dfs - SC: O(M) / assigned - SC: O(N)
                     dfs(s_idx + 1, assigned + [m_idx], scores + score)
             return self.ans
 
