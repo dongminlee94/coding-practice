@@ -29,8 +29,8 @@ class Solution:
         """
         M: len(students) / N: len(students[0])
         TC: O(M! * N^2) / SC: O(M)
-        Runtime: 2628 ms, faster than 33.54%
-        Memory Usage: 14.2 MB, less than 95.44%
+        Runtime: 2685 ms, faster than 32.27%
+        Memory Usage: 14.2 MB, less than 95.48%
         """
         self.ans = 0
 
