@@ -20,7 +20,7 @@ import math
 
 class Solution:
     """
-    TC: O(logN) / SC: O(N)
+    TC: O(sqrt(N)) / SC: O(sqrt(N))
     Runtime: 28 ms, faster than 94.08%
     Memory Usage: 14.2 MB, less than 72.88%
     """
