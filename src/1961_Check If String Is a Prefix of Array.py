@@ -29,6 +29,7 @@ class Solution:
         """
         w_num = 0
         for word in words:
+            # 'w_num + len(word)': slicing -> pass / get, set -> error
             if s[w_num : w_num + len(word)] != word:
                 return False
             w_num += len(word)
