@@ -30,10 +30,8 @@ class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
         """
         TC: O(N) / SC: O(N)
-        Runtime: 49 ms, faster than 35.01%
-        Memory Usage: 14.1 MB, less than 94.65%
         """
-        ans = ""
+        ans = []
         for i, num in enumerate(nums):
-            ans += "1" if num[i] == "0" else "0"
-        return ans
+            ans.append("1" if num[i] == "0" else "0")
+        return "".join(ans)

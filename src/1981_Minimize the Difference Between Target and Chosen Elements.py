@@ -14,7 +14,6 @@ The sum of the chosen elements is 13, which equals the target, so the absolute d
 
 Example 2:
 
-
 Input: mat = [[1],[2],[3]], target = 100
 Output: 94
 Explanation: The best possible choice is to:
@@ -24,7 +23,6 @@ Explanation: The best possible choice is to:
 The sum of the chosen elements is 6, and the absolute difference is 94.
 
 Example 3:
-
 
 Input: mat = [[1,2,9,8,7]], target = 6
 Output: 1
@@ -42,8 +40,6 @@ class Solution:
         """
         M: len(mat) / N: len(mat[0])
         TC: O((M*N)^2) / SC: O(2*M*N)
-        Runtime: 2214 ms, faster than 87.93%
-        Memory Usage: 14.3 MB, less than 99.60%
         """
         cur_set = set([0])
         for row in mat:  # TC: O(M)

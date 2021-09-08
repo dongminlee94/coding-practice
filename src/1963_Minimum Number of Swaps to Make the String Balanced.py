@@ -33,8 +33,6 @@ class Solution:
     def minSwaps(self, s: str) -> int:
         """
         TC: O(N) / SC: O(1)
-        Runtime: 472 ms, faster than 66.15%
-        Memory Usage: 25.3 MB, less than 93.32%
         """
         balance, ans = 0, 0
         for i in range(len(s)):

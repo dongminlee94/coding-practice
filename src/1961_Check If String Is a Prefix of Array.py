@@ -24,8 +24,6 @@ class Solution:
     def isPrefixString(self, s: str, words: List[str]) -> bool:
         """
         TC: O(len(words)) / SC: O(1)
-        Runtime: 32 ms, faster than 89.26%
-        Memory Usage: 14.1 MB, less than 95.97%
         """
         w_num = 0
         for word in words:

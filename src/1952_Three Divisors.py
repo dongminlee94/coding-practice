@@ -21,8 +21,6 @@ import math
 class Solution:
     """
     TC: O(sqrt(N)) / SC: O(sqrt(N))
-    Runtime: 28 ms, faster than 94.08%
-    Memory Usage: 14.2 MB, less than 72.88%
     """
 
     def isThree(self, n: int) -> bool:

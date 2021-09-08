@@ -26,8 +26,6 @@ class Solution:
     def minimumPerimeter(self, neededApples: int) -> int:
         """
         TC: O(neededApples^(1/3)) / SC: O(1)
-        Runtime: 1104 ms, faster than 56.18%
-        Memory Usage: 14.1 MB, less than 90.02%
         """
         i = 1
         summedApples = 0

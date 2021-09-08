@@ -38,9 +38,7 @@ from typing import List
 
 class Solution:
     """
-    TC: O(logN) / SC: O(1)
-    Runtime: 52 ms, faster than 91.37%
-    Memory Usage: 14.4 MB, less than 37.01%
+    TC: O(N) / SC: O(1)
     """
 
     def findGCD(self, nums: List[int]) -> int:

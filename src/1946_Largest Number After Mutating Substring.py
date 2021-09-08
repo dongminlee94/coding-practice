@@ -57,8 +57,6 @@ class Solution:
     def maximumNumber2(self, num: str, change: List[int]) -> str:
         """
         TC: O(N) / SC: O(N)
-        Runtime: 284 ms, faster than 66.52%
-        Memory Usage: 22.2 MB, less than 49.40%
         """
         num_list = list(num)
         changed = False
@@ -73,8 +71,6 @@ class Solution:
     def maximumNumber3(self, num: str, change: List[int]) -> str:
         """
         TC: O(N^2) / SC: O(N)
-        Runtime: 1324 ms, faster than 6.40%
-        Memory Usage: 16.3 MB, less than 63.96%
         """
         changed = False
         for i in range(len(list(num))):

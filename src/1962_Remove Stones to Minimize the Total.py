@@ -41,8 +41,6 @@ class Solution:
         """
         N: len(piles)
         TC: O(klogN) / SC: O(N)
-        Runtime: 1856 ms, faster than 64.12%
-        Memory Usage: 28.9 MB, less than 45.63%
         """
         heap = [-p for p in piles]  # TC: O(N)
         heapq.heapify(heap)  # TC: O(N)
