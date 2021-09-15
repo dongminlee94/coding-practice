@@ -34,4 +34,4 @@ class Solution:
         """
         TC: O(NlogN) / SC: O(N)
         """
-        return str(sorted(list(map(int, nums)), reverse=True)[k - 1])
+        return str(sorted(map(int, nums), reverse=True)[k - 1])

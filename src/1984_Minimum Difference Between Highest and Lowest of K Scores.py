@@ -29,9 +29,9 @@ from typing import List
 class Solution:
     def minimumDifference(self, nums: List[int], k: int) -> int:
         """
-        TC: O(NlogN) / SC: O(N)
+        TC: O(NlogN) / SC: O(1)
         """
-        nums = sorted(nums, reverse=True)  # TC: NlogN
+        nums.sort(reverse=True)  # TC: NlogN
         min_diff = 100000
         for i in range(len(nums) - k + 1):  # TC: N
             diff = nums[i] - nums[i + k - 1]

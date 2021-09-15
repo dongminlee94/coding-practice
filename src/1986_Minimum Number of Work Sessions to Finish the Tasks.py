@@ -34,24 +34,25 @@ from typing import List, Tuple
 class Solution:
     def minSessions(self, tasks: List[int], sessionTime: int) -> int:
         """
-        TC: O() / SC: O()
+        N: len(tasks)
+        TC: O(2^N * N) / SC: O(N^2)
         """
-        tasks = sorted(tasks)
+        tasks.sort()
 
         @lru_cache(maxsize=None)
-        def dfs(tasks: Tuple[int], time: int):
+        def dfs(tasks: Tuple[int], remainingTime: int):
             if len(tasks) == 0:
                 return 1
 
             ans = 0
             results = []
-            if tasks[0] > time:
+            if tasks[0] > remainingTime:
                 ans += 1
-                time = sessionTime
+                remainingTime = sessionTime
 
-            for i, task in enumerate(tasks):
-                if task <= time:
-                    results.append(dfs(tasks[:i] + tasks[i + 1 :], time - task))
+            for i, task_time in enumerate(tasks):
+                if task_time <= remainingTime:
+                    results.append(dfs(tasks[:i] + tasks[i + 1 :], remainingTime - task_time))
                 else:
                     break
             return ans + min(results)
