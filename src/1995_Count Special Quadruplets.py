@@ -33,8 +33,8 @@ from typing import List
 class Solution:
     def countQuadruplets(self, nums: List[int]) -> int:
         """
-        n: len(nums)
-        TC: O(n_C_4) / SC: O(2 * 4) <- (index + value) * 4
+        N: len(nums)
+        TC: O(N^4) / SC: O(2 * 4) <- (index + value) * 4
         """
         ans = 0
         for quad in itertools.combinations(enumerate(nums), 4):
