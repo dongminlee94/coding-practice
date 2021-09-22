@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 1952. Three Divisors
 https://leetcode.com/problems/three-divisors/
