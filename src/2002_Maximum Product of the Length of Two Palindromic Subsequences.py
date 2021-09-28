@@ -34,7 +34,7 @@ class Solution:
     def maxProduct(self, s: str) -> int:
         """
         N: len(s)
-        TC: O(2^N * N) / SC: O(2^N + N)
+        TC: O(2^N * N) / SC: O(2 * 2^N + N)
         """
         # len(s) <= 12, which means the search space is small
         arr = []
@@ -43,11 +43,11 @@ class Solution:
             for i in range(len(s)):  # TC: O(N)
                 # Convert the bitmask to the actual subsequence
                 if mask & (1 << i) > 0:  # (1 << i): 2^0, 2^1, ..., 2^10
-                    subseq.append(s[i])
+                    subseq.append(s[i])  # SC: N
 
             # Check whether a subseq is palindromic or not
             if subseq == subseq[::-1]:
-                arr.append((mask, len(subseq)))
+                arr.append((mask, len(subseq)))  # SC: 2 * 2^N
 
         arr.sort(key=lambda x: x[1], reverse=True)  # TC: NlogN
 
