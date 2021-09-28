@@ -51,19 +51,19 @@ class Solution:
 
         arr.sort(key=lambda x: x[1], reverse=True)  # TC: NlogN
 
-        result = 1
+        ans = 1
         for i in range(len(arr)):  # TC: O(2^N)
-            mask1, len1 = arr[i]
+            i_mask, i_len = arr[i]
 
             # Break early
-            if len1 ** 2 < result:
+            if i_len ** 2 < ans:
                 break
 
             for j in range(i + 1, len(arr)):  # TC: O(N)
-                mask2, len2 = arr[j]
+                j_mask, j_len = arr[j]
 
-                # Disjoint
-                if mask1 & mask2 == 0 and len1 * len2 > result:
-                    result = len1 * len2
+                # Check whether arr[i] and arr[j] are disjoint or not
+                if i_mask & j_mask == 0 and i_len * j_len > ans:
+                    ans = i_len * j_len
                     break
-        return result
+        return ans
