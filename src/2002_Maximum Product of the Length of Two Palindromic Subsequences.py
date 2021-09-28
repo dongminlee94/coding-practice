@@ -39,11 +39,11 @@ class Solution:
         # len(s) <= 12, which means the search space is small
         arr = []
         for mask in range(1, 1 << len(s)):  # range(1, 2^n)
-            subseq = ""
+            subseq = []
             for i in range(len(s)):
                 # Convert the bitmask to the actual subsequence
                 if mask & (1 << i) > 0:  # (1 << i): 2^0, 2^1, ..., 2^10
-                    subseq += s[i]
+                    subseq.append(s[i])
 
             # Check whether a subseq is palindromic or not
             if subseq == subseq[::-1]:
