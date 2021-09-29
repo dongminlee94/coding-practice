@@ -45,10 +45,10 @@ class Solution:
     def interchangeableRectangles2(self, rectangles: List[List[int]]) -> int:
         """
         N: len(rectangles)
-        TC: O(N) / SC: O(N)
+        TC: O(NlogN) / SC: O(N)
         """
         for i in range(len(rectangles)):  # TC: O(N)
-            gcd_value = math.gcd(rectangles[i][0], rectangles[i][1])
+            gcd_value = math.gcd(rectangles[i][0], rectangles[i][1])  # TC: O(logN)
             rectangles[i][0] = int(rectangles[i][0] / gcd_value)
             rectangles[i][1] = int(rectangles[i][1] / gcd_value)
 
