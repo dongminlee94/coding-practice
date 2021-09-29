@@ -41,7 +41,7 @@ class Solution:
         """
         # len(s) <= 12, which means the search space is small
         arr = []
-        for mask in range(1, 1 << len(s)):  # 1 << len(s): range(1, 2^n)
+        for mask in range(1, 1 << len(s)):  # 1 << len(s): 2^n
             subseq = []
             for i in range(len(s)):  # TC: O(N)
                 # Convert the bitmask to the actual subsequence
