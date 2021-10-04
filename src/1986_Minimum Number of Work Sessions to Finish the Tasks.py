@@ -42,7 +42,7 @@ class Solution:
         tasks.sort()
 
         @lru_cache(maxsize=None)
-        def dfs(tasks: Tuple[int], remainingTime: int):
+        def dfs(tasks: Tuple[int], remainingTime: int) -> int:
             if len(tasks) == 0:
                 return 1
 
