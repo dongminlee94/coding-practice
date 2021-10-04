@@ -48,16 +48,16 @@ class DetectSquares:
     def count(self, point: List[int]) -> int:
         """
         M: len(the number of count calls)
-        TC: O(M * N * 2)
+        TC: O(M * N)
         """
         ans = 0
         for y in self.square[point[0]]:
             if point[1] != y:
                 y_interval = abs(point[1] - y)
                 for interval in [-y_interval, y_interval]:
-                    point_1 = self.square[point[0]][y]
-                    point_2 = self.square[point[0] + interval][y]
-                    point_3 = self.square[point[0] + interval][point[1]]
+                    point_1 = self.square[point[0]][y]  # In -y_interval, bottom right
+                    point_2 = self.square[point[0] + interval][y]  # Bottom left
+                    point_3 = self.square[point[0] + interval][point[1]]  # Top left
                     ans += point_1 * point_2 * point_3
         return ans
 
