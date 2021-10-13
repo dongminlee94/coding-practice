@@ -27,6 +27,11 @@ Output: 7
 Explanation: The optimal path taken by the first robot is shown in red, and the optimal path taken by the second robot is shown in blue.
 The cells visited by the first robot are set to 0.
 The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
+
+References:
+- https://en.wikipedia.org/wiki/Minimax
+- https://medium.com/tokeonomy/%EA%B2%8C%EC%9E%84%EC%9D%B4%EB%A1%A0-%EB%B2%A0%EC%9D%B4%EC%A7%81-game-theory-basic-398bbfd4f87b
+- https://medium.com/tokeonomy/%EA%B2%8C%EC%9E%84%EC%9D%B4%EB%A1%A0-%EB%B2%A0%EC%9D%B4%EC%A7%81-game-theory-basic-%EC%A0%9C%EB%A1%9C%EC%84%AC%EA%B2%8C%EC%9E%84-zero-sum-game-3ad0057a8f93
 """
 from typing import List
 
