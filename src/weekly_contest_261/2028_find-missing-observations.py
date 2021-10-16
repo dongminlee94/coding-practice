@@ -41,20 +41,20 @@ class Solution:
         # (sum(rolls) + x) / (len(rolls) + n) = mean
         # x = (mean * (len(rolls) + n)) - sum(rolls)
         quo, rem = divmod(mean * (len(rolls) + n) - sum(rolls), n)  # TC: O(N)
-        missing_list = [quo] * n  # SC: O(n)
+        missing_obs = [quo] * n  # SC: O(n)
 
         if quo <= 0 or quo > 6 or (quo == 6 and rem != 0):
             return []
         elif quo == 6 and rem == 0:
-            return missing_list
+            return missing_obs
         else:
-            for i in range(len(missing_list)):  # TC: O(n)
-                max_value = missing_list[i] + rem
+            for i in range(len(missing_obs)):  # TC: O(n)
+                max_value = missing_obs[i] + rem
 
                 if max_value > 6:
                     rem = max_value - 6
-                    missing_list[i] += 6 - missing_list[i]
+                    missing_obs[i] += 6 - missing_obs[i]
                 else:
-                    missing_list[i] += rem
+                    missing_obs[i] += rem
                     break
-            return missing_list
+            return missing_obs
