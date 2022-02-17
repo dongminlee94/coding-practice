@@ -10,6 +10,10 @@ from typing import List
 
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
+        """
+        N = len(board) * len(board[0])
+        TC: O(N) / SC: O(N)
+        """
         row_chk = [set() for _ in range(9)]
         col_chk = [set() for _ in range(9)]
         box_chk = [set() for _ in range(9)]
