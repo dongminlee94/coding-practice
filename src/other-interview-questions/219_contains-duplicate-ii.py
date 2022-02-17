@@ -32,7 +32,7 @@ class Solution:
         for i, num in enumerate(nums):
             if num in nums_dict and (i - nums_dict[num] <= k):
                 return True
-            nums_dict[num] += [i]
+            nums_dict[num] += i
         return False
 
     def containsNearbyDuplicate2(self, nums: List[int], k: int) -> bool:
