@@ -19,7 +19,7 @@ class Solution:
             while len(nums_dict) > k:  # Condition k
                 nums_dict.popitem(last=False)  # First item is popped
 
-            idx = num // (t + 1)  # Unique index
+            idx = num // (t + 1)  # Bucket index
             if (
                 (idx in nums_dict)  # Condition t
                 or (idx - 1 in nums_dict and abs(nums_dict[idx - 1] - num) <= t)
