@@ -20,7 +20,7 @@ class Solution:
 
     def twoSum1(self, nums: List[int], target: int) -> List[int]:
         """
-        1) Put (target - value) in advance
+        1) Put (target - value) in sum_dict in advance
         2) and then check if there's (target - value) in sum_dict
 
         TC: O(N) / SC: O(N)
