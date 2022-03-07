@@ -11,6 +11,7 @@ from typing import List
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         """
+        Hash table version
         TC: O(N) / SC: O(N)
         """
         sum_dict = {}
@@ -21,6 +22,7 @@ class Solution:
 
     def twoSum1(self, numbers: List[int], target: int) -> List[int]:
         """
+        Binary search version
         TC: O(NlogN) / SC: O(1)
         """
         for idx in range(len(numbers)):  # O(N)
@@ -35,3 +37,20 @@ class Solution:
                     left = mid + 1
                 else:
                     right = mid - 1
+
+    def twoSum3(self, numbers: List[int], target: int) -> List[int]:
+        """
+        Two pointer version
+        TC: O(N) / SC: O(1)
+        """
+        left = 0
+        right = len(numbers) - 1
+        while left < right:
+            sum_value = numbers[left] + numbers[right]
+
+            if sum_value == target:
+                return [left + 1, right + 1]
+            elif sum_value < target:
+                left += 1
+            else:
+                right -= 1
