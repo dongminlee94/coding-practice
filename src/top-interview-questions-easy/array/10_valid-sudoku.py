@@ -11,8 +11,8 @@ from typing import List
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         """
-        N = len(board) * len(board[0])
-        TC: O(N) / SC: O(N)
+        81 = len(board) * len(board[0])
+        TC: O(1) / SC: O(1)
         """
         row_chk = [set() for _ in range(9)]
         col_chk = [set() for _ in range(9)]
@@ -23,6 +23,10 @@ class Solution:
                 if board[i][j] == ".":
                     continue
 
+                # Range of 3x3 sub-box
+                # 1 2 3
+                # 4 5 6
+                # 7 8 9
                 k = ((i // 3) * 3) + (j // 3)
                 if (
                     (board[i][j] in row_chk[i])
