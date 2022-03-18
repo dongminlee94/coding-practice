@@ -8,6 +8,9 @@ https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/str
 
 class Solution:
     def myAtoi(self, s: str) -> int:
+        """
+        TC: O(N) / SC: O(N)
+        """
         s = s.lstrip()
         sign = False
         ans = ""
