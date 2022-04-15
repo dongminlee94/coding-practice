@@ -2,6 +2,6 @@ format:
 		black . --line-length 104
 		isort .
 
-setup:
+init:
 		pip install -r requirements.txt
 		pre-commit install
