@@ -3,6 +3,11 @@
 """
 6. String to Integer (atoi) *
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/884/
+
+String strip(), lstrip(), rstrip() 
+- strip(): returns a new string after removing any leading and trailing whitespaces including tabs (\t).
+- lstrip(): returns a new string with leading whitespace removed.
+- rstrip(): returns a new string with trailing whitespace removed.
 """
 
 

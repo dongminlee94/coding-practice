@@ -3,6 +3,10 @@
 """
 5. Valid Palindrome *
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/883/
+
+String isalpha(), isalnum()
+isalpha(): returns true if the string is in English or Korean, or false if not.
+isalnum(): returns true if the string is in English, Korean, or numeric, or false if not.
 """
 
 
