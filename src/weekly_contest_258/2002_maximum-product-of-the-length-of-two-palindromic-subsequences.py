@@ -59,7 +59,7 @@ class Solution:
             i_mask, i_len = arr[i]
 
             # Break early
-            if i_len ** 2 < ans:
+            if i_len**2 < ans:
                 break
 
             for j in range(i + 1, len(arr)):  # TC: O(N)

@@ -63,7 +63,7 @@ class Solution:
         """
         TC: O(N) / SC: O(N)
         """
-        modulo = 10 ** 9 + 7
+        modulo = 10**9 + 7
         # dp: The number of days it took to reach room i starting from room 0
         dp = [0] * len(nextVisit)
 

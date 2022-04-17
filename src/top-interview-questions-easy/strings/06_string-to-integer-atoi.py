@@ -4,7 +4,7 @@
 6. String to Integer (atoi) *
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/884/
 
-String strip(), lstrip(), rstrip() 
+String strip(), lstrip(), rstrip()
 - strip(): returns a new string after removing any leading and trailing whitespaces including tabs (\t).
 - lstrip(): returns a new string with leading whitespace removed.
 - rstrip(): returns a new string with trailing whitespace removed.
@@ -36,9 +36,9 @@ class Solution:
             return 0
         else:
             ans = int(ans)
-            if ans > 2 ** 31 - 1:
-                return 2 ** 31 - 1
-            elif ans < -(2 ** 31):
-                return -(2 ** 31)
+            if ans > 2**31 - 1:
+                return 2**31 - 1
+            elif ans < -(2**31):
+                return -(2**31)
             else:
                 return ans

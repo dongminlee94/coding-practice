@@ -3,4 +3,3 @@ isort==5.9.3
 pre-commit==2.14.0
 pytest==6.2.4
 pytest-cov==2.12.1
-pytest-custom-exit-code==0.3.0
