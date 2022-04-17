@@ -1,0 +1,21 @@
+#
+# According to PEP-518, https://www.python.org/dev/peps/pep-0518/
+#
+[build-system]
+# Minimum requirements for the build system to execute, according to PEP-508
+requires = [
+    "build>=0.7",
+    "setuptools>=59.4",
+    "wheel>=0.37"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 104
+target-version = ["py38"]
+exclude = ""
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+extend_skip_glob = ""
