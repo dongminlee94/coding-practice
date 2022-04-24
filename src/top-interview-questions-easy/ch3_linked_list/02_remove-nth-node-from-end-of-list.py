@@ -22,16 +22,16 @@ class Solution:
         N: The number of nodes
         TC: O(N) / SC: O(1)
         """
-        slow = head
+        fast = head
         for _ in range(n):
-            slow = slow.next
+            fast = fast.next
 
-        if not slow:  # When the first node is removed
+        if not fast:  # When the first node is removed
             return head.next
 
-        fast = head
-        while slow.next:
-            slow = slow.next
+        slow = head
+        while fast.next:
             fast = fast.next
-        fast.next = fast.next.next
+            slow = slow.next
+        slow.next = slow.next.next
         return head
