@@ -26,7 +26,7 @@ class Solution:
         for _ in range(n):
             fast = fast.next
 
-        if not fast:  # When the first node is removed
+        if not fast:  # When n is the first node and the length of a head
             return head.next
 
         slow = head

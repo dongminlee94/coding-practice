@@ -26,10 +26,10 @@ class Solution:
         trav = root
         prev = -float("inf")
         while trav or stack:
-            if trav:
+            if trav:  # Always start traversal with the left
                 stack.append(trav)
                 trav = trav.left
-            else:
+            else:  # When trav is None
                 node = stack.pop()
                 if node:
                     if node.val <= prev:
