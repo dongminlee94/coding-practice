@@ -1,10 +1,8 @@
-SHELL := /bin/bash
-
 format:
-		black .
-		isort .
+	black .
+	isort .
 
 init:
-		pip install -U pip
-		pip install -r requirements.txt
-		pre-commit install
+	pip install -U pip
+	pip install -r requirements.txt
+	pre-commit install
