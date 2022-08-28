@@ -11,6 +11,9 @@ import math
 
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:
+        """
+        TC: O(1) / SC: O(1)
+        """
         if n <= 0:
             return False
         return 3 ** round(math.log(n, 3)) == n
