@@ -6,7 +6,7 @@ authors = ["dongminlee94 <kid33629@gmail.com>"]
 license = "MIT License"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8,<3.10"
 
 [tool.poetry.dev-dependencies]
 black = "22.3.0"
