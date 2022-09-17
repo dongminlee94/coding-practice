@@ -178,7 +178,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "virtualenv"
-version = "20.16.4"
+version = "20.16.5"
 description = "Virtual Python Environment builder"
 category = "dev"
 optional = false
