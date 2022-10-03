@@ -1,14 +1,12 @@
-all: init format lint
+all: init format
+	echo 'Makefile for the coding-practice-leetcode repository'
 
 init:
-	pip install poetry==1.1.15
+	pip install poetry
 	pip install -U pip
 	poetry install
-	pre-commit install
+	poetry run pre-commit install
 
 format:
-	black .
-	isort .
-
-publish:
-	poetry export --dev -f requirements.txt --output requirements.txt --without-hashes
+	poetry run black .
+	poetry run isort .

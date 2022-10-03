@@ -14,17 +14,12 @@ isort = "5.10.1"
 pre-commit = "2.14.0"
 
 [build-system]
-requires = [
-    "build>=0.7",
-    "setuptools>=59.4",
-    "wheel>=0.37",
-    "poetry-core>=1.0.0"
-]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 104
-target-version = ["py38"]
+target-version = ["py38", "py39"]
 exclude = ""
 
 [tool.isort]
