@@ -19,8 +19,8 @@ class Solution:
             left = i - size
             sub_s1, sub_s2 = s[left - 1 : i + 1], s[left : i + 1]
 
-            if left - 1 >= 0 and sub_s1 == sub_s1[::-1]:  # bab
+            if left - 1 >= 0 and sub_s1 == sub_s1[::-1]:
                 start, size = left - 1, size + 2
-            elif sub_s2 == sub_s2[::-1]:  # cbbc
+            elif sub_s2 == sub_s2[::-1]:
                 start, size = left, size + 1
         return s[start : start + size]
