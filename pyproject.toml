@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "coding-practice-leetcode"
+name = "coding-practice"
 version = "0.1.0"
-description = "Coding practice in LeetCode"
+description = "Coding Practice"
 authors = ["dongminlee94 <kid33629@gmail.com>"]
 license = "MIT License"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.10"
+python = ">=3.9,<3.11"
 
 [tool.poetry.dev-dependencies]
 black = "22.3.0"
@@ -19,10 +19,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 104
-target-version = ["py38", "py39"]
-exclude = ""
 
 [tool.isort]
 profile = "black"
 skip_gitignore = true
-extend_skip_glob = ""
