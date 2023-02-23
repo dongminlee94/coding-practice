@@ -29,4 +29,4 @@ def longestChain(words):
     return ans
 
 
-print(longestChain(["a", "and", "an", "bear"]))
+assert longestChain(["a", "and", "an", "bear"]) == 3

@@ -47,9 +47,7 @@ class Solution:
                 max_num = changed_num
 
             for j in range(1, len(num[i + 1 :]) + 1):
-                changed_num = (
-                    changed_num[: i + j] + str(change[int(num[i + j])]) + changed_num[i + j + 1 :]
-                )
+                changed_num = changed_num[: i + j] + str(change[int(num[i + j])]) + changed_num[i + j + 1 :]
                 if changed_num >= max_num:
                     max_num = changed_num
                 else:

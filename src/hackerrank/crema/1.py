@@ -12,5 +12,5 @@ def getFinalString(s: str) -> str:
             return s
 
 
-print(getFinalString("AAWSWS"))
-print(getFinalString("AWAWSSG"))
+assert getFinalString("AAWSWS") == -1
+assert getFinalString("AWAWSSG") == "G"

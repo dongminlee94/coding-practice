@@ -28,11 +28,7 @@ class Solution:
                 # 4 5 6
                 # 7 8 9
                 k = ((i // 3) * 3) + (j // 3)
-                if (
-                    (board[i][j] in row_chk[i])
-                    or (board[i][j] in col_chk[j])
-                    or (board[i][j] in box_chk[k])
-                ):
+                if (board[i][j] in row_chk[i]) or (board[i][j] in col_chk[j]) or (board[i][j] in box_chk[k]):
                     return False
 
                 row_chk[i].add(board[i][j])

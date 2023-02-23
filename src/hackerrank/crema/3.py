@@ -9,5 +9,5 @@ def maxLength(a, k):
                     return end
 
 
-print(maxLength([1, 2, 3], 4))
-print(maxLength([3, 1, 2, 1], 4))
+assert maxLength([1, 2, 3], 4) == 2
+assert maxLength([3, 1, 2, 1], 4) == 3

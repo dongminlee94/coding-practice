@@ -32,5 +32,5 @@ def findRange(num: int) -> int:
     return int(ma) - int(mi)
 
 
-print(findRange(111))
-print(findRange(10018))
+assert findRange(111) == 888
+assert findRange(10018) == 80088
