@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 
+import collections
+
 
 def solution(movie):
-    cnt = {}
-    for m in movie:
-        if m not in cnt:
-            cnt[m] = 1
-        else:
-            cnt[m] += 1
+    cnt = collections.Counter(movie)
     return sorted(cnt.keys(), key=lambda m: (-cnt[m], m))
 
 
