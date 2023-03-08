@@ -10,7 +10,7 @@ install-poetry:
 	fi;\
 
 init:
-	@echo "Construct Backend Development Environment";\
+	@echo "Construct Development Environment";\
 	if [ -z $(VIRTUAL_ENV) ]; then echo Warning, Virtual Environment is required; fi;\
 	if [ -z `command -v poetry` ];\
 		then make install-poetry;\
