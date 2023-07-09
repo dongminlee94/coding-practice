@@ -10,8 +10,6 @@ init:
 #######################
 #   static analysis   #
 #######################
-check: format lint
-
 format:
 	pdm run black .
 	pdm run isort .
