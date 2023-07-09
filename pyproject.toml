@@ -1,21 +1,25 @@
-[tool.poetry]
+[project]
 name = "coding-practice"
-version = "0.1.0"
+version = "0.0.0"
 description = "Coding Practice"
-authors = ["dongminlee94 <kid33629@gmail.com>"]
-license = "MIT License"
+authors = [{name = "dongminlee94", email = "kid33629@gmail.com"}]
+readme = "README.md"
 
-[tool.poetry.dependencies]
-python = ">=3.9,<3.11"
+requires-python = ">=3.10,<3.11"
 
-[tool.poetry.dev-dependencies]
-black = "22.3.0"
-isort = "5.10.1"
-pre-commit = "2.14.0"
+dependencies = []
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "isort>=5.10.1",
+    "pre-commit>=3.2.2",
+]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [tool.black]
 line-length = 110
