@@ -1,11 +1,11 @@
 [project]
-name = "coding-practice"
+name = "coding-practice-leetcode"
 version = "0.0.0"
-description = "Coding Practice"
+description = "Coding Practice on Leetcode"
 authors = [{name = "dongminlee94", email = "kid33629@gmail.com"}]
 readme = "README.md"
 
-requires-python = ">=3.10,<3.11"
+requires-python = ">=3.10,<3.12"
 
 dependencies = []
 
